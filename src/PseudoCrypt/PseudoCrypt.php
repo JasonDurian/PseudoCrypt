@@ -51,7 +51,7 @@ class PseudoCrypt
         $dec = bcmod(bcmul($num, $prime), $ceil);
         $hash = self::base62($dec);
         $result = str_pad($hash, $len, "0", STR_PAD_LEFT);
-        if ($with_id) {
+        if ($withId) {
             return array($dec, $result);
         } else {
             return $result;
