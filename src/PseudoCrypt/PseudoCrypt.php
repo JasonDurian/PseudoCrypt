@@ -43,7 +43,7 @@ class PseudoCrypt
         return strrev($key);
     }
 
-    public static function hash($num, $len = 8, $with_id = false)
+    public static function hash($num, $len = 8, $withId = false)
     {
         $ceil = bcpow(62, $len);
         $primes = array_keys(self::$golden_primes);
